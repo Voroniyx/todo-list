@@ -19,7 +19,7 @@ jobs:
         node-version: 19.x
 
     - name: Install Dependencies
-      run: npm install
+      run: npm ci
 
     - name: Build Vue.js Project
       run: npm run build

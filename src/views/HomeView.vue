@@ -23,6 +23,8 @@
                 TODO: Unterstreichen, etc... für Todos
                 TODO: Bagdes entwwicklen (Fertig, Im Gange, etc...)
                 TODO: Fortschrittbalken erstellen jenachdem wie viele todos einer stories angeschlossen wurde
+                TODO: Im Todos tab ein Badge an das Todo machen, was den Namen der Storie enthält
+                TODO: Anstelle von ToolTips einfach eine Beschreibung in den jeweiligen tab packen
             -->
 
         </div>

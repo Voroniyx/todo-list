@@ -12,3 +12,22 @@ app.use(router);
 
 app.mount("#app");
 
+export enum Status {
+    GEPLANT,
+    IM_GANGE,
+    FERTIG,
+}
+
+export interface Todo {
+    name: string,
+    id: number,
+    description: string,
+    status:Status,
+
+}
+
+export interface Storie {
+    name: string,
+    id: number,
+    todos: Todo[]
+}

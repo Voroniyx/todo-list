@@ -1,31 +1,14 @@
-name: Build and Deploy
-
-on:
-  push:
-    branches:
-      - main
-
+name: Build Vue
+on: [push]
 jobs:
-  build:
+  build_vue:
     runs-on: ubuntu-latest
-
+    name: Build Vue
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
       with:
-        node-version: 19.x
-
-    - name: Install Dependencies
-      run: npm ci
-
-    - name: Build Vue.js Project
-      run: npm run build
-
-    # - name: Deploy to GitHub Pages
-      # uses: peaceiris/actions-gh-pages@v3
-      # with:
-        # github_token: ${{ secrets.GITHUB_TOKEN }}
-        # publish_dir: dist # Dies sollte das Verzeichnis sein, in dem Ihr Build-Output liegt
+        username: 'YourGithubName'
+        reponame: 'YourRepoName'
+        token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,3 @@
-# https://vitejs.dev/guide/static-deploy.html#github-pages
 name: Deploy static content to Pages
 
 on:
